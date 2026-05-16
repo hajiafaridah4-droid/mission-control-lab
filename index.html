@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission Control Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <h1>MISSION CONTROL • MECHATRONICS LAB</h1>
+  <div class="status">● LIVE SYSTEM ACTIVE</div>
+</header>
+
+<div class="layout">
+
+  <div class="panel">
+    <h2>System Core</h2>
+    <p>CPU: <span id="cpu">--</span></p>
+    <p>Stability: <span id="stability">--</span></p>
+    <p>Signal: <span id="signal">--</span></p>
+  </div>
+
+  <div class="panel">
+    <h2>Swarm Arena</h2>
+    <div class="arena">
+      <div class="robot r1"></div>
+      <div class="robot r2"></div>
+      <div class="robot r3"></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>AI Control</h2>
+    <p>Health: <span id="health">100%</span></p>
+    <p>Mood: <span id="mood">STABLE</span></p>
+    <p>Mode: <span id="mode">NORMAL</span></p>
+  </div>
+
+</div>
+
+<div class="panel full">
+  <h2>Neural Oscilloscope</h2>
+  <canvas id="graph"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
